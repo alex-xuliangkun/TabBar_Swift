@@ -1,0 +1,14 @@
+{
+    "tabBars":[
+        {
+            "imageNor":"icon_tabbar_home_nor",
+            "imageSel":"icon_tabbar_home_sel",
+            "title":"首页"
+        },
+        {
+            "imageNor":"icon_tabbar_auction_nor",
+            "imageSel":"icon_tabbar_auction_sel",
+            "title":"商城"
+        }
+    ]
+}

@@ -42,6 +42,34 @@ func RANDOMCOLOR() -> UIColor {
     return RGBCOLOR(r: CGFloat(arc4random()%256), g: CGFloat(arc4random()%256), b: CGFloat(arc4random()%256),alpha: 1)
 } //随机色
 
+//MARK: - Font
+func regularFont(_ size: CGFloat) -> UIFont{
+    if IOS_VERSION > 9.0{
+        return UIFont.init(name: "PingFangSC-Regular", size: size * CGFloat(kWSacle))!
+    }
+    else{
+        return UIFont.systemFont(ofSize: size * CGFloat(kWSacle))
+    }
+}
+
+func mediumFont(_ size: CGFloat) -> UIFont{
+    if IOS_VERSION > 9.0{
+        return UIFont.init(name: "PingFangSC-Medium", size: size * CGFloat(kWSacle))!
+    }
+    else{
+        return UIFont.systemFont(ofSize: size * CGFloat(kWSacle))
+    }
+}
+
+func semiboldFont(_ size: CGFloat) -> UIFont{
+    if IOS_VERSION > 9.0{
+        return UIFont.init(name: "PingFangSC-Semibold", size: size * CGFloat(kWSacle))!
+    }
+    else{
+        return UIFont.systemFont(ofSize: size * CGFloat(kWSacle))
+    }
+}
+
 //MARK: - DEBUG模式下打印(Swift)
 func Dprint<T>(_ message: T, filePath: String = #file, rowCount: Int = #line) {
     #if DEBUG

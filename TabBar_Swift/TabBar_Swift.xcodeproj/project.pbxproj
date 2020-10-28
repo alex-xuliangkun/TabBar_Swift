@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046019082547ED51009ECA41 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046019072547ED51009ECA41 /* MainTabBarVC.swift */; };
+		0460190C2547EFCE009ECA41 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460190B2547EFCE009ECA41 /* HomeVC.swift */; };
+		046019102547F450009ECA41 /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460190F2547F450009ECA41 /* UIViewEx.swift */; };
+		04601914254802D4009ECA41 /* Directions.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 04601913254802D4009ECA41 /* Directions.geojson */; };
+		0460192E254824C7009ECA41 /* TabBarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460192D254824C7009ECA41 /* TabBarProtocol.swift */; };
+		0460193125482FFB009ECA41 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460193025482FFB009ECA41 /* ShopVC.swift */; };
 		3BC3C0E343B1F24C3621A03D /* Pods_TabBar_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72476D09FAAF92D2522D0CD5 /* Pods_TabBar_Swift.framework */; };
 		5E2B8E432533F50500BB45E9 /* BaseTabBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B8E422533F50500BB45E9 /* BaseTabBtn.swift */; };
 		5E2B8E502533FC5500BB45E9 /* HeaderFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2B8E4F2533FC5500BB45E9 /* HeaderFunc.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046019072547ED51009ECA41 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		0460190B2547EFCE009ECA41 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0460190F2547F450009ECA41 /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
+		04601913254802D4009ECA41 /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
+		0460192D254824C7009ECA41 /* TabBarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocol.swift; sourceTree = "<group>"; };
+		0460193025482FFB009ECA41 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
 		5E2B8E422533F50500BB45E9 /* BaseTabBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBtn.swift; sourceTree = "<group>"; };
 		5E2B8E4F2533FC5500BB45E9 /* HeaderFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFunc.swift; sourceTree = "<group>"; };
 		5E3168A22531C3E800B5A4A3 /* TabBar_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBar_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +64,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046018FB2547D3A7009ECA41 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				04601913254802D4009ECA41 /* Directions.geojson */,
+				0460192D254824C7009ECA41 /* TabBarProtocol.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		046019042547ECF8009ECA41 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				046019052547ECFD009ECA41 /* TabBar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		046019052547ECFD009ECA41 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				046019062547ED0B009ECA41 /* C */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		046019062547ED0B009ECA41 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				046019072547ED51009ECA41 /* MainTabBarVC.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		0460190E2547F3CF009ECA41 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0460190F2547F450009ECA41 /* UIViewEx.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		5E3168992531C3E800B5A4A3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +126,9 @@
 		5E3168A42531C3E800B5A4A3 /* TabBar_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				0460190E2547F3CF009ECA41 /* Categories */,
+				046019042547ECF8009ECA41 /* Modules */,
 				5E3168C52531C87700B5A4A3 /* Headers */,
-				5E3168C02531C7F700B5A4A3 /* TabBar */,
 				5E3168BE2531C7CB00B5A4A3 /* Base */,
 				5E3168A52531C3E800B5A4A3 /* AppDelegate.swift */,
 				5E3168A72531C3E800B5A4A3 /* SceneDelegate.swift */,
@@ -83,6 +137,8 @@
 				5E3168AE2531C3EB00B5A4A3 /* Assets.xcassets */,
 				5E3168B02531C3EB00B5A4A3 /* LaunchScreen.storyboard */,
 				5E3168B32531C3EB00B5A4A3 /* Info.plist */,
+				0460190B2547EFCE009ECA41 /* HomeVC.swift */,
+				0460193025482FFB009ECA41 /* ShopVC.swift */,
 			);
 			path = TabBar_Swift;
 			sourceTree = "<group>";
@@ -90,6 +146,7 @@
 		5E3168BE2531C7CB00B5A4A3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				046018FB2547D3A7009ECA41 /* TabBar */,
 				5E3168CA2531CA0A00B5A4A3 /* V */,
 				5E3168BF2531C7D900B5A4A3 /* C */,
 			);
@@ -102,13 +159,6 @@
 				5E3168C12531C83100B5A4A3 /* BaseTabBarVC.swift */,
 			);
 			path = C;
-			sourceTree = "<group>";
-		};
-		5E3168C02531C7F700B5A4A3 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		5E3168C52531C87700B5A4A3 /* Headers */ = {
@@ -206,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3168B22531C3EB00B5A4A3 /* LaunchScreen.storyboard in Resources */,
+				04601914254802D4009ECA41 /* Directions.geojson in Resources */,
 				5E3168AF2531C3EB00B5A4A3 /* Assets.xcassets in Resources */,
 				5E3168AD2531C3E800B5A4A3 /* Main.storyboard in Resources */,
 			);
@@ -260,12 +311,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046019102547F450009ECA41 /* UIViewEx.swift in Sources */,
 				5E2B8E502533FC5500BB45E9 /* HeaderFunc.swift in Sources */,
+				0460190C2547EFCE009ECA41 /* HomeVC.swift in Sources */,
 				5E3168C72531C8DA00B5A4A3 /* Header.swift in Sources */,
 				5E3168AA2531C3E800B5A4A3 /* ViewController.swift in Sources */,
 				5E3168CC2531CA2A00B5A4A3 /* BaseTabBar.swift in Sources */,
+				046019082547ED51009ECA41 /* MainTabBarVC.swift in Sources */,
 				5E2B8E432533F50500BB45E9 /* BaseTabBtn.swift in Sources */,
 				5E3168C22531C83100B5A4A3 /* BaseTabBarVC.swift in Sources */,
+				0460192E254824C7009ECA41 /* TabBarProtocol.swift in Sources */,
+				0460193125482FFB009ECA41 /* ShopVC.swift in Sources */,
 				5E3168A62531C3E800B5A4A3 /* AppDelegate.swift in Sources */,
 				5E3168A82531C3E800B5A4A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -417,6 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TabBar_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,6 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TabBar_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

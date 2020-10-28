@@ -30,5 +30,8 @@ let isIpone = UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone
 
 //let SCREEN_MIN_LENGTH = MIN
 
+//MARK: - 版本号
+let IOS_VERSION = UIDevice.current.systemVersion._bridgeToObjectiveC().doubleValue
+
 
 

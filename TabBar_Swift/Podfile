@@ -7,7 +7,8 @@ target 'TabBar_Swift' do
 pod 'JXSegmentedView'
 pod 'JXPagingView/Paging'
 
-pod 'SnapKit'
+pod 'SnapKit', '5.0.1'
+pod 'SwiftyJSON'
 
   # Pods for TabBar_Swift
 
